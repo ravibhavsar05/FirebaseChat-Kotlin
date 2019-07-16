@@ -25,8 +25,9 @@ chatting(single).
 * Inspiration
 * etc
 
-![FirebaseChat-Kotlin - Animated gif demo](FirebaseChat-Kotlin/app/Message Sent.gif)
-![FirebaseChat-Kotlin - Animated gif demo](FirebaseChat-Kotlin/app/Message Receive.gif)
+
+![FirebaseChat-Kotlin - Animated gif demo](FirebaseChat-Kotlin/app/ChatSend.gif)
+
 
 ### Message List
 ````
