@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#efeff1"
+        android:padding="@dimen/_15sdp"
+        tools:context=".activity.ListActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/color_353348"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/ic_logout"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivBack"
+            android:fontFamily="@font/martel"
+            android:text="List of Form Data"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_18sdp"/>
+
+    <EditText
+            android:id="@+id/etSearch"
+            android:layout_below="@id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:inputType="text"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/color_9796A5"
+            android:drawableTint="@color/color_9796A5"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/martel_light"
+            android:background="@drawable/bg_et_border"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerData"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etSearch"/>
+
+    <RelativeLayout
+            android:id="@+id/relativeNoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvHeader">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:fontFamily="@font/martel"
+                android:drawableTop="@drawable/ic_no_data_found"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_16sdp"
+                android:text="@string/no_data_found"/>
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_add"/>
+
+
+</RelativeLayout>

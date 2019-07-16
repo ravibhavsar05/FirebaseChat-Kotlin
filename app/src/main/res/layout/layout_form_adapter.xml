@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/_3sdp"
+    android:weightSum="1">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:padding="@dimen/_3sdp"
+                app:civ_border="true"
+                android:src="@drawable/ic_placeholder"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="@dimen/_1sdp" />
+
+            <LinearLayout
+                android:id="@+id/linearDetail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".85"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/first_name"
+                    android:padding="@dimen/_1sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/email"
+                    android:padding="@dimen/_1sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/phone"
+                    android:padding="@dimen/_1sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/address"
+                    android:padding="@dimen/_1sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_edit" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_delete" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

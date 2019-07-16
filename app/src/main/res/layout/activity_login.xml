@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_15sdp"
+        tools:context=".activity.LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/color_353348"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_below="@+id/ivBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/martel"
+            android:text="Welcome to Login."
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_18sdp"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:layout_centerInParent="true"
+                  android:orientation="vertical">
+
+
+        <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_et_border"
+                android:fontFamily="@font/martel_light"
+                android:hint="@string/email"
+                android:text="d@gmail.com"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/color_9796A5"
+                android:textSize="@dimen/_13sdp"
+        />
+
+        <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/bg_button_border"
+                android:fontFamily="@font/martel"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"/>
+
+        <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/martel"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="@dimen/_10sdp"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Register"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

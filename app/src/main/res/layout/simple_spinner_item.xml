@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/martel_light"
+    android:padding="@dimen/_10sdp"
+    android:textColor="@color/color_9796A5"
+    android:textColorHint="@color/color_9796A5"
+    android:textSize="@dimen/_13sdp" />

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="messageBarContainerStyle" format="reference" />
+
+    <attr name="messageBarTextStyle" format="reference" />
+    <declare-styleable name="KMPAutoComplTextView">
+        <attr name="completionHighlightColor" format="reference|color" />
+        <attr name="completionTextColor" format="reference|color" />
+        <attr name="completionTextSize" format="dimension" />
+        <attr name="completionIgnoreCase" format="boolean" />
+    </declare-styleable>
+    <attr name="messageBarButtonStyle" format="reference" />
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="PasswordView">
+        <attr name="strikeThrough" format="boolean" />
+        <attr name="eyeTint" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrollingPagerIndicator">
+        <attr name="spi_dotColor" format="color" />
+        <attr name="spi_dotSelectedColor" format="color" />
+        <attr name="spi_dotSize" format="dimension" />
+        <attr name="spi_dotSelectedSize" format="dimension" />
+        <attr name="spi_dotSpacing" format="dimension" />
+        <attr name="spi_visibleDotCount" format="integer" />
+        <attr name="spi_visibleDotThreshold" format="integer" />
+        <attr name="spi_looped" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ElegantNumberButton">
+
+        <attr name="backGroundColor" format="color" />
+        <attr name="initialNumber" format="integer" />
+        <attr name="finalNumber" format="integer" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="backgroundDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpansionHeader">
+        <attr name="expansion_layout" format="reference" />
+        <attr name="expansion_toggleOnClick" format="boolean" />
+        <attr name="expansion_headerIndicator" format="reference" />
+        <attr name="expansion_headerIndicatorRotationExpanded" format="integer" />
+        <attr name="expansion_headerIndicatorRotationCollapsed" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpansionLayout">
+        <attr name="expansion_expanded" format="boolean" />
+    </declare-styleable>
+
+    <attr name="expansion_openOnlyOne" format="boolean" />
+
+    <declare-styleable name="ExpansionsViewGroupFrameLayout">
+        <attr name="expansion_openOnlyOne" />
+    </declare-styleable>
+    <declare-styleable name="ExpansionsViewGroupLinearLayout">
+        <attr name="expansion_openOnlyOne" />
+    </declare-styleable>
+    <declare-styleable name="ExpansionsViewGroupRelativeLayout">
+        <attr name="expansion_openOnlyOne" />
+    </declare-styleable>
+    <declare-styleable name="ExpansionsViewGroupConstraintLayout">
+        <attr name="expansion_openOnlyOne" />
+    </declare-styleable>
+</resources>

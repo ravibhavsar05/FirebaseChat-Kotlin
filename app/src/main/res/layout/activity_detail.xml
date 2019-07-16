@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.DetailActivity">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_15sdp"
+                    android:src="@drawable/ic_back"
+                    android:tint="@color/color_353348"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/_15sdp"
+                    android:src="@drawable/ic_chat"/>
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:fontFamily="@font/martel"
+                android:text="Detail Screen"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_18sdp"/>
+
+        <LinearLayout
+                android:id="@+id/linearDetail"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/ivProfileImage"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:gravity="center"
+                    app:civ_border_color="@color/colorAccent"
+                    app:civ_border_width="@dimen/_2sdp"
+                    app:civ_border="true"
+                    app:civ_shadow_radius="10"
+                    app:civ_shadow_color="#8BC34A"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_placeholder"
+                    android:layout_gravity="center" app:srcCompat="@drawable/ic_placeholder"/>
+            <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/first_name"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/email"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/phone"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_gender"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/gender"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+                    android:id="@+id/tvBirthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_birthdate"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/birthday"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+                    android:id="@+id/tvAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_age"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/age"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+                    android:id="@+id/tvAboutme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_about_me"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/about_me"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_address"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/address"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+                    android:id="@+id/tvState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_state"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/state"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_city"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/city"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+                    android:id="@+id/tvZip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_zip"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:fontFamily="@font/martel_light"
+                    android:hint="@string/zip"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/color_9796A5"
+                    android:textSize="@dimen/_13sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

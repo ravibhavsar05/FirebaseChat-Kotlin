@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1038365938410",
+    "firebase_url": "https://fir-dbapp-efcea.firebaseio.com",
+    "project_id": "fir-dbapp-efcea",
+    "storage_bucket": "fir-dbapp-efcea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038365938410:android:3adc48f2e9751b32",
+        "android_client_info": {
+          "package_name": "com.kanhasoft.firedb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038365938410-gjrvdeoss6didgb99mnsgc5l455obeuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE5LniqcVPUY1iP4H8ThwN6cNOkNHoR9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038365938410-gjrvdeoss6didgb99mnsgc5l455obeuj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

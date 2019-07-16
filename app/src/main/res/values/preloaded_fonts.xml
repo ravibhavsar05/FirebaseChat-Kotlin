@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/delius</item>
+        <item>@font/martel</item>
+        <item>@font/martel_light</item>
+        <item>@font/martel_sans_extralight</item>
+    </array>
+</resources>
