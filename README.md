@@ -28,6 +28,8 @@ chatting(single).
 
 ![FirebaseChat-Kotlin - Animated gif demo](app/ChatSend.gif)
 
+![FirebaseChat-Kotlin - Animated gif demo](app/ChatReceiver.gif)
+
 
 ### Message List
 ````
