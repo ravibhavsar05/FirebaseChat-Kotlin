@@ -15,10 +15,10 @@ chatting(single).
 
 ### Built With
 
-* [Firebase Console] (https://firebase.google.com/docs/cloud-messaging/) 
-* [Glide] (https://github.com/bumptech/glide/)
-* [Swipe Layout] (https://github.com/arman-sar/SwipeLayout/)
-* [Lottie Dialog] (https://github.com/airbnb/lottie-android/)
+* [Firebase Console](https://firebase.google.com/docs/cloud-messaging/) 
+* [Glide](https://github.com/bumptech/glide/)
+* [Swipe Layout](https://github.com/arman-sar/SwipeLayout/)
+* [Lottie Dialog](https://github.com/airbnb/lottie-android/)
 
 ### Acknowledgments
 * Hat tip to anyone whose code was used
